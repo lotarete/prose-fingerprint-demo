@@ -134,7 +134,7 @@ export default function GenreDemoPage() {
                 variant={1}
                 offsetY={32}
                 number={1}
-                text="Claude wrote this fingerprint from what it already knows about how the book is described in public — Goodreads, StoryGraph, Kirkus, NYT / Guardian reviews. Never the book's own prose."
+                text="Claude wrote this style fingerprint from what it already knows about how the book is described in public: Goodreads, StoryGraph, Kirkus, NYT / Guardian reviews. Never the book's own prose."
                 scale="Claude writes each from a grounding packet: ~20 Goodreads reviews + StoryGraph tags + 2–3 preview passages per book."
               />
               <Annotation
@@ -143,7 +143,7 @@ export default function GenreDemoPage() {
                 variant={2}
                 offsetY={-40}
                 number={2}
-                text="Claude scored all 9 axes (0–1) the same way. Spot-checked 5 titles against live Goodreads / StoryGraph / Kirkus reviews — 5/5 matched."
+                text="Claude scored all 9 axes (0–1) the same way. The model isn't generating opinions. It's averaging ones that already exist, and we audited a sample to prove it."
                 scale="Same 9 axes, auto-scored per title. A rolling audit re-checks 5% of new vectors against live reviews, so drift shows up as a number, not a vibe."
               />
             </>
@@ -171,8 +171,8 @@ export default function GenreDemoPage() {
                     variant={3}
                     offsetY={8}
                     number={4}
-                    text="Green = axes this book is closest to the anchor on. Tan = axes they're furthest apart on. No overall score shown — the reader weighs the trade-off."
-                    scale="Identical math. Anchors stay human-curated (40–100 per genre) so each axis keeps meaning the same thing as the catalog grows."
+                    text="Green = axes this book is closest to the anchor book on. Tan = axes they're furthest apart on. No overall score shown — the reader weighs the trade-off."
+                    scale="Identical math. Anchor books stay human-curated (40–100 per genre) so each axis keeps meaning the same thing as the catalog grows."
                   />
                   <Annotation
                     side="left"
@@ -180,7 +180,7 @@ export default function GenreDemoPage() {
                     variant={1}
                     offsetY={160}
                     number={3}
-                    text="Each book gets its own fingerprint the same way as the anchor, so you can read the two side-by-side and feel the overlap yourself."
+                    text="Each book gets its own style fingerprint the same way as the anchor book, so you can read the two side-by-side and feel the overlap yourself."
                     scale="Same method across the catalog. Per-axis confidence is added so books with thin review data flag themselves instead of faking certainty."
                   />
                 </div>
