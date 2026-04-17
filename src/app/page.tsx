@@ -68,7 +68,7 @@ export default function HomePage() {
             A different kind of recommendation
           </p>
           <h1
-            className="text-4xl md:text-5xl font-semibold text-[#1A1A1A] mb-5 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#1A1A1A] mb-5 leading-tight whitespace-nowrap"
             style={{ fontFamily: "var(--font-lora)" }}
           >
             Find authors by <em className="text-[#C5A24D] not-italic">how</em> they write
